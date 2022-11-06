@@ -50,7 +50,7 @@
     <main>
         <section class="hero">
             <h1 class="main-title">Ефективні рішення для <br> вашого бізнесу</h1>
-            <button class="modal-button button" type="button">Замовити послугу</button>
+            <button data-modal-open class="modal-button button" type="button">Замовити послугу</button>
         </section>
     
         <!-- Перевага -->
@@ -108,9 +108,18 @@
             <div class="container">
                 <h2 class="secondary-title">Чим ми займаємося</h2>
             <ul class="our-tasks-list list" >
-                <li class="our-tasks-item"><img src="./img/code.jpg" alt="написання коду" width="370"></li>
-                <li class="our-tasks-item"><img src="./img/phone.jpg" alt="перевірка роботи сайту на інших платформах" width="370"></li>
-                <li class="our-tasks-item"><img src="./img/color.jpg" alt="підбір колірної гами" width="370"></li>
+                <li class="our-tasks-item">
+                  <img src="./img/code.jpg" alt="написання коду" width="370">
+                  <p class="tasks-descrpt">Десктопні додатки</p>
+                </li>
+                <li class="our-tasks-item">
+                  <img src="./img/phone.jpg" alt="перевірка роботи сайту на інших платформах" width="370">
+                  <p class="tasks-descrpt">Мобільні додатки</p>
+                </li>
+                <li class="our-tasks-item">
+                  <img src="./img/color.jpg" alt="підбір колірної гами" width="370">
+                  <p class="tasks-descrpt">Дизайнерські рішення</p>
+                </li>
             </ul>
             </div>
         </section>
@@ -377,6 +386,18 @@
           </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="modal-btn">
+          <svg class="modal-close-btn" width="11" height="11" >
+            <use href="./img/btn-close.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+<script src="./js/modal.js"></script>
 
 </body>
 </html>
